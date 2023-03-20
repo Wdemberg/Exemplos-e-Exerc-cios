@@ -1,0 +1,20 @@
+algoritmo "semnome"
+// Função : As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+//compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+//escreva o custo total da compra.
+
+var
+quantidade : inteiro
+total : real
+inicio
+escreval("digite a quantidade de maças")
+leia(quantidade)
+
+se (quantidade < 12) entao
+    total := quantidade * 1.3
+senao
+    total := quantidade * 1.0
+fimse
+
+escreval("custo total: ", total)
+fimalgoritmo
